@@ -44,6 +44,7 @@ public class RemarkCommand extends Command {
         this.index = index;
         this.remark = new Remark(remark);
     }
+
     @Override
     public CommandResult execute(Model model) throws CommandException {
         List<Person> lastShownList = model.getFilteredPersonList();
